@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+import axios from 'axios'
 
+axios.defaults.baseURL = 'http://localhost:5000/'
+axios.defaults.headers.post['Content-Type'] = 'application/json'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
